@@ -39,7 +39,7 @@ F_org = (S × L) / (C × L')
 - **矛盾検出** — 回答間の不整合（例: 危機感は高いが予算が独立していない、IT 予算はあるのに動けない等）をパターンとして提示
 - **推奨アクション** の優先度つき提示
 - **IT 予算の売上高比率** を金額入力から自動算出し、公開ベンチマーク（ITR / Deloitte / Flexera）と比較
-- **PDF 出力**（ブラウザの印刷機能を使用）と **ROIツール連携 (JSON)** — 診断結果を JSON で書き出し、投資対効果を試算する下流ツールに渡せます
+- **PDF 出力**（ブラウザの印刷機能を使用）と **OVERDUE 連携 (JSON)** — 診断結果を JSON で書き出し、投資対効果を試算する [OVERDUE](https://github.com/takainthecloud-glitch/OVERDUE) に渡せます
 - **ライト / ダークテーマ**切替（paper / indigo）
 
 ### データの扱い
@@ -48,7 +48,7 @@ F_org = (S × L) / (C × L')
 
 ## 使い方
 
-1. `forg_ztelier_v3_0_0.html`（または `index.html`）をダウンロードする
+1. `forg_ztelier_v3_0_1.html`（または `index.html`）をダウンロードする
 2. ブラウザでファイルを開く
 
 ビルド不要・サーバー不要です。GitHub Pages を有効にした場合は `index.html` がそのまま表示されます。
@@ -61,7 +61,7 @@ Chrome / Edge / Firefox / Safari の最新版。JavaScript を有効にしてく
 
 ## バージョン
 
-- アプリケーション: **v3.0.0**（HTML 内の `const APP_VER` が唯一の版数の出所）
+- アプリケーション: **v3.0.1**（HTML 内の `const APP_VER` が唯一の版数の出所）
 - 設問セット（methodology）: v4.3
 - 設計システム: Ztelier Edition
 
