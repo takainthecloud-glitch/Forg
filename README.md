@@ -1,6 +1,6 @@
 # F_org — Organizational Friction Atelier
 
-**English summary:** F_org is a single-file HTML self-assessment tool that quantifies the *organizational friction* that slows down digital and zero-trust transformation. Borrowing the metaphor of a coefficient of friction, it treats Silo (S) and Legacy (L) as the numerator and Crisis awareness (C) and Leadership will (L') as the denominator, computing **F_org = (S × L) / (C × L')** from 19 questions. Everything runs locally in the browser — no data is sent anywhere — and results can be printed to PDF or exported as JSON. The UI is in Japanese.
+**English summary:** F_org is a single-file HTML self-assessment tool that quantifies the *organizational friction* that slows down digital and zero-trust transformation. Borrowing the metaphor of a coefficient of friction, it treats Silo (S) and Legacy (L) as the numerator and Crisis awareness (C) and Leadership will (L') as the denominator, computing **F_org = (S × L) / (C × L')** from 23 questions. Everything runs locally in the browser — no data is sent anywhere — and results can be printed to PDF or exported as JSON. The UI is in Japanese.
 
 ---
 
@@ -33,12 +33,13 @@ F_org = (S × L) / (C × L')
 
 ### 主な機能
 
-- **19 問の設問**（S:5 / L:5 / C:4 / L':5）を 4 章立てで回答。所要時間は約 10 分
+- **23 問の設問**（S:6 / L:6 / C:5 / L':6）を 4 章立てで回答。所要時間は約 12 分
+  - v3.1.0 で AI統制4問（シャドーAI可視性・AI参照可能なデータ基盤・AIリスク認識・組織的推進）を追加
 - **F 値メーター** と業界平均との差分表示
 - **組織アーキタイプ判定** — 分子・分母の組み合わせから 4 象限で組織の体質を分類（変革の臨界点型 / 孤立無援・理想家型 / 外圧依存・消去法型 / 安穏・思考停止型）
 - **矛盾検出** — 回答間の不整合（例: 危機感は高いが予算が独立していない、IT 予算はあるのに動けない等）をパターンとして提示
 - **推奨アクション** の優先度つき提示
-- **IT 予算の売上高比率** を金額入力から自動算出し、公開ベンチマーク（ITR / Deloitte / Flexera）と比較
+- **IT 予算の売上高比率** を金額入力から自動算出し、公開ベンチマーク（ITR / Deloitte / Flexera / 総務省 情報通信白書 2026）と比較
 - **PDF 出力**（ブラウザの印刷機能を使用）と **OVERDUE 連携 (JSON)** — 診断結果を JSON で書き出し、投資対効果を試算する [OVERDUE](https://github.com/takainthecloud-glitch/OVERDUE) に渡せます
 - **ライト / ダークテーマ**切替（paper / indigo）
 
@@ -48,7 +49,7 @@ F_org = (S × L) / (C × L')
 
 ## 使い方
 
-1. `forg_ztelier_v3_0_1.html`（または `index.html`）をダウンロードする
+1. `forg_ztelier_v3_1_0.html`（または `index.html`）をダウンロードする
 2. ブラウザでファイルを開く
 
 ビルド不要・サーバー不要です。GitHub Pages を有効にした場合は `index.html` がそのまま表示されます。
@@ -61,11 +62,13 @@ Chrome / Edge / Firefox / Safari の最新版。JavaScript を有効にしてく
 
 ## バージョン
 
-- アプリケーション: **v3.0.1**（HTML 内の `const APP_VER` が唯一の版数の出所）
-- 設問セット（methodology）: v4.3
+- アプリケーション: **v3.1.0**（HTML 内の `const APP_VER` が唯一の版数の出所）
+- 設問セット（methodology）: v4.4
 - 設計システム: Ztelier Edition
 
 エクスポートする JSON のスキーマ版数はアプリ版数とは別軸で管理されています。
+
+> v4.4（23問）の F 値は v4.3（19問）と直接比較できません。
 
 ## ライセンス
 
