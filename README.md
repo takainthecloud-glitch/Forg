@@ -41,7 +41,7 @@ F_org = (S × L) / (C × L')
 - **推奨アクション** の優先度つき提示
 - **IT 予算の売上高比率** を金額入力から自動算出し、公開ベンチマーク（ITR / Deloitte / Flexera / 総務省 情報通信白書 2026）と比較
 - **PDF 出力**（ブラウザの印刷機能を使用）と **OVERDUE 連携 (JSON)** — 診断結果を JSON で書き出し、投資対効果を試算する [OVERDUE](https://github.com/takainthecloud-glitch/OVERDUE) に渡せます
-- **ライト / ダークテーマ**切替（paper / indigo）
+- **3 色のテーマ**切替（paper / indigo / beige）
 
 ### データの扱い
 
@@ -49,7 +49,7 @@ F_org = (S × L) / (C × L')
 
 ## 使い方
 
-1. `forg_ztelier_v3_2_2.html`（または `index.html`）をダウンロードする
+1. `forg_ztelier_v4_0_0.html`（または `index.html`）をダウンロードする
 2. ブラウザでファイルを開く
 
 ビルド不要・サーバー不要です。GitHub Pages を有効にした場合は `index.html` がそのまま表示されます。
@@ -62,9 +62,9 @@ Chrome / Edge / Firefox / Safari の最新版。JavaScript を有効にしてく
 
 ## バージョン
 
-- アプリケーション: **v3.2.2**（HTML 内の `const APP_VER` が唯一の版数の出所）
+- アプリケーション: **v4.0.0**（HTML 内の `const APP_VER` が唯一の版数の出所）
 - 設問セット（methodology）: v4.4
-- 設計システム: Ztelier Edition — Ztelier UI Kit v1.0
+- 設計システム: Ztelier Design System v2 — Ztelier Console UI v2.0
 
 エクスポートする JSON のスキーマ版数はアプリ版数とは別軸で管理されています。
 
@@ -72,6 +72,9 @@ Chrome / Edge / Firefox / Safari の最新版。JavaScript を有効にしてく
 
 ### 更新履歴
 
+- **v4.0.0**（2026-08-28）
+  - **UI を Ztelier Console UI v2.0 シェルへ刷新** — 264px 固定サイドナビ＋ヒーロー帯を導入した新しい画面構成に変更しました。配色のもとになるデザイントークンを正典 Ztelier Design System v2（Future Blue / Cyber Black）に統一し、新たに3色目のテーマ **Frontier Beige（beige）** を追加しています（テーマボタンで paper → indigo → beige の順に切り替え）。
+  - 表示のみの刷新であり、**設問・スコア計算・アーキタイプ判定・エクスポート形式（`forg-v4`）に変更はありません**（v3.2.2 以前の JSON もそのまま読み込めます）。
 - **v3.2.2**（2026-08-09）
   - **組織アーキタイプ判定の4アイコンを再デザイン** — 変革の臨界点型（rocket）/ 孤立無援・理想家型（lightning）/ 外圧依存・消去法型（fire）/ 安穏・思考停止型（sleep）の各アイコンを、名前ではなくアーキタイプの意味そのものが伝わる図形に描き直しました（例: 安穏・思考停止型は変化のないフラットな計測トレース＝横ばいの推移で表現）。表示のみの変更で、判定ロジック・設問・エクスポート JSON の形式に変更はありません。
 - **v3.2.1**（2026-08-08）
